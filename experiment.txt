@@ -1,1 +1,4 @@
-2019.3.26 模型验证：pkuseg+msra模型切分词后的icwb2评分为 数据集 MSRA F1 0.852  
+2019.3.26   
+模型验证：  
+pkuseg+msra模型切分词后的icwb2评分为 数据集 MSRA F1 0.852  
+pkuseg+默认混合模型切分词后的icwb2评分为 数据集 MSRA R=0.883   P=0.863    F1 0.873  
