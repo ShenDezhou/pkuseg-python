@@ -1,8 +1,43 @@
 2019.3.26   
-模型验证：                              数据集                  icwb2评分
+模型验证：                             数据集                  icwb2评分
                                                            R      P        F
-pkuseg+msra模型                        MSRA                               0.852  
-pkuseg+默认混合模型                     MSRA             0.883     0.863   0.873  
-pkuseg+msra模型二次训练pku数据          MSRA              0.887     0.867   0.877  
+pkuseg+msra模型                        MSRA              0.939   0.959   0.949  
 pkuseg+ctb8模型                        MSRA              0.873     0.854   0.863  
 pkuseg+weibo模型                       MSRA              0.860     0.844   0.852  
+
+pkuseg+msra模型二次训练pku数据          MSRA              0.887     0.867   0.877  
+
+pkuseg+mixed模型(默认)                 MSRA               0.883   0.863   0.873   
+pkuseg+web模型                         MSRA               0.860   0.844   0.852  
+
+MSRA testset  
+pkuseg+msra模型                        MSRA  test            0.939   0.959   0.949  
+=== SUMMARY:  
+=== TOTAL INSERTIONS:   797  
+=== TOTAL DELETIONS:    3050  
+=== TOTAL SUBSTITUTIONS:        3511  
+=== TOTAL NCHANGE:      7358  
+=== TOTAL TRUE WORD COUNT:      106873  
+=== TOTAL TEST WORD COUNT:      104620  
+=== TOTAL TRUE WORDS RECALL:    0.939  
+=== TOTAL TEST WORDS PRECISION: 0.959  
+=== F MEASURE:  0.949  
+=== OOV Rate:   0.026  
+=== OOV Recall Rate:    0.736  
+=== IV Recall Rate:     0.944  
+
+MSRA trainset  
+pkuseg+msra模型                        MSRA training           0.958   0.979   0.969   
+=== SUMMARY:  
+=== TOTAL INSERTIONS:   1263  
+=== TOTAL DELETIONS:    51852  
+=== TOTAL SUBSTITUTIONS:        46558  
+=== TOTAL NCHANGE:      99673  
+=== TOTAL TRUE WORD COUNT:      2368391  
+=== TOTAL TEST WORD COUNT:      2317802  
+=== TOTAL TRUE WORDS RECALL:    0.958  
+=== TOTAL TEST WORDS PRECISION: 0.979  
+=== F MEASURE:  0.969  
+=== OOV Rate:   0.000  
+=== OOV Recall Rate:    0.667  
+=== IV Recall Rate:     0.958  
