@@ -1,17 +1,17 @@
-2019.3.26   
-模型验证：                             数据集                  icwb2评分
-                                                           R      P        F
-pkuseg+msra模型                        MSRA              0.939   0.959   0.949  
-pkuseg+ctb8模型                        MSRA              0.873     0.854   0.863  
-pkuseg+weibo模型                       MSRA              0.860     0.844   0.852  
+2019.3.26  
+# MSRA
+|Model     | Recall | Precision |   F-score |
+| :-----   | --------: | -----: | --------: |
+| msra     |    0.939  | 0.959  | 0.949     |
+| msra*    |    0.958  | 0.979  | 0.969     |
+| ctb      |    0.873  | 0.854  | 0.863     |
+| weibo    |    0.860  | 0.844  | 0.852     |
+| msra+pku |    0.860  | 0.844  | 0.852     |
+| mixed    |    0.883  | 0.867  | 0.877     |
+*这个实验基于MSRA training上完成的
 
-pkuseg+msra模型二次训练pku数据          MSRA              0.887     0.867   0.877  
 
-pkuseg+mixed模型(默认)                 MSRA               0.883   0.863   0.873   
-pkuseg+web模型                         MSRA               0.860   0.844   0.852  
-
-MSRA testset  
-pkuseg+msra模型                        MSRA  test            0.939   0.959   0.949  
+# MSRA test set  
 === SUMMARY:  
 === TOTAL INSERTIONS:   797  
 === TOTAL DELETIONS:    3050  
@@ -26,8 +26,7 @@ pkuseg+msra模型                        MSRA  test            0.939   0.959   0
 === OOV Recall Rate:    0.736  
 === IV Recall Rate:     0.944  
 
-MSRA trainset  
-pkuseg+msra模型                        MSRA training           0.958   0.979   0.969   
+# MSRA train set  
 === SUMMARY:  
 === TOTAL INSERTIONS:   1263  
 === TOTAL DELETIONS:    51852  
@@ -41,3 +40,10 @@ pkuseg+msra模型                        MSRA training           0.958   0.979  
 === OOV Rate:   0.000  
 === OOV Recall Rate:    0.667  
 === IV Recall Rate:     0.958  
+
+2019.3.27  
+# PKU
+|Model     | Recall | Precision |   F-score |
+| :-----   | --------: | -----: | --------: |
+| pku      |    0.922  | 0.951  | 0.936     |
+
